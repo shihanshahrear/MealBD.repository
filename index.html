@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=form, initial-scale=1.0">
+    <title>Document</title>
+   
+
+    <style>
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  input[type="search"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .product-card {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .product-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .product-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .product-card button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .product-card button:hover {
+    background-color: #45a049;
+  }
+  .all-products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .product-card {
+    flex-basis: calc(25% - 25px);
+  }
+  body {
+    width: 960px;
+    margin: 0 auto;
+  }
+        </style>
+
+</head>
+<body>
+   
+    <form id="mealSearchForm" action="">
+        <input type="search" id="search" placeholder="Search Meal" />
+        <select name="" id="selectCategory"></select>
+        <input type="submit" value="Seach" />
+      </form>
+  
+      <div class="all-products"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
